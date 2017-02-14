@@ -380,10 +380,11 @@ h3 {
 .list-services {
   width: 70%;
   margin: 0 auto;
+  overflow: hidden;
   max-width: 1200px;
 }
 .list-services li {
-  width: 530px;
+  max-width: 530px;
   padding-left: 90px;
   float: left;
   margin-bottom: 70px;
@@ -422,6 +423,13 @@ h3 {
   margin-left: 70px;
 }
 
+@media (min-width: 1200px) and (max-width: 1700px) {
+  .list-services {
+    overflow: hidden;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .about-us-section {
   width: 100%;
   display: -webkit-flex;
