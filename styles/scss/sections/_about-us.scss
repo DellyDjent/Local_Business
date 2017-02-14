@@ -1,0 +1,49 @@
+.about-us-section {
+  width: 100%;
+  @include display-flex;
+  @include flex-direction (row);
+  .left-chapter, .right-chapter {
+    width: 50%;
+  }
+  .left-chapter {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .right-chapter {
+    background-color: #ffc155;
+    padding: 160px 0 0 75px;
+    h2 {
+      font-family: $fontGotham;
+      font-size: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $white;
+    }
+    article {
+      width: 70%;
+      font-size: 13px;
+      font-family: $fontSans;
+      color: $white;
+      margin: 20px 0;
+    }
+  }
+  .btn-read-more {
+    display: block;
+    width: 145px;
+    height: 45px;
+    border: 1px solid #e7ad48;
+    background-color: rgba(231, 173, 72, 0);
+    @include border-radius (2px);
+    @include transition (0.5s);
+    color: $white;
+    text-transform: uppercase;
+    font-size: $small;
+    font-family: $latoRegular;
+    &:hover {
+      color: #e7ad48;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

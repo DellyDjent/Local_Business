@@ -1,0 +1,68 @@
+.service-section {
+  padding: 100px 0 140px;
+  .service-subhead {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+}
+
+.service-subhead {
+  p {
+    font-size: $medium;
+    color: $mainGrey;
+    font-family: $fontSans;
+  }
+}
+
+h3 {
+  font-size: $large;
+  color: $mainGrey;
+  text-transform: uppercase;
+  font-family: $fontGotham;
+  font-weight: 900;
+}
+
+.list-services {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1200px;
+  li {
+    width: 530px;
+    padding-left: 90px;
+    float: left;
+    margin-bottom: 70px;
+    h4 {
+      font-size: $medium;
+      color: $mainGrey;
+      font-family: $latoBold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 13px;
+      font-family: $fontSans;
+      color: $greySecond;
+    }
+  }
+  .font-awesome {
+    background: url("../../img/bg_service_item_1.png") left top no-repeat;
+  }
+  .fully-responsive {
+    background: url("../../img/bg_service_item_4.png") left top no-repeat;
+    margin-left: 70px;
+  }
+  .working-contact {
+    background: url("../../img/bg_service_item_2.png") left top no-repeat;
+  }
+  .retina-ready {
+    background: url("../../img/bg_service_item_5.png") left top no-repeat;
+    margin-left: 70px;
+  }
+  .friendly-code {
+     background: url("../../img/bg_service_item_3.png") left top no-repeat;
+   }
+  .flat-trendy {
+    background: url("../../img/bg_service_item_6.png") left top no-repeat;
+    margin-left: 70px;
+  }
+}
