@@ -1,0 +1,85 @@
+.how-works {
+  padding: 185px 0 150px;
+  .how-works-subhead {
+    text-align: center;
+    p {
+      font-size: $medium;
+      color: $mainGrey;
+      font-family: $fontSans;
+    }
+  }
+  .get-start {
+    display: block;
+    text-align: center;
+    width: 165px;
+    padding: 15px 0;
+    margin: 0 auto;
+    color: $white;
+    background-color: #ffbb42;
+    text-transform: uppercase;
+    border-radius: 2px;
+  }
+}
+
+.list-steps {
+  @include display-flex;
+  @include flex-direction (row);
+  @include justify-content (center);
+  @include align-items (center);
+  max-width: 1110px;
+  margin: 75px auto 90px;
+  li {
+    position: relative;
+    padding-top: 165px;
+    text-align: center;
+    min-width: 220px;
+    margin: 0 40px;
+  }
+  p {
+    font-size: 13px;
+    font-family: $fontSans;
+    color: $greySecond;
+  }
+  .step-subhead {
+    display: block;
+    font-size: 20px;
+    color: $mainGrey;
+    font-family: $latoBold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  .step-one {
+    background: url("../../img/step_one.png") top center no-repeat;
+  }
+  .step-two {
+    background: url("../../img/step_two.png") top center no-repeat;
+  }
+  .step-three {
+    background: url("../../img/step_three.png") top center no-repeat;
+  }
+  .step-four {
+    background: url("../../img/step_four.png") top center no-repeat;
+  }
+  .steps-up-arrow:after {
+   content: " ";
+   background: url("../../img/arrow_up.png") top center no-repeat;
+   display: block;
+   position: absolute;
+   top: -10%;
+   left: 100%;
+   height: 35px;
+   width: 135px;
+   transform: translateX(-15%);
+ }
+  .steps-down-arrow:after {
+    content: " ";
+    background: url("../../img/arrow_down.png") top center no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 60%;
+    left: 100%;
+    height: 35px;
+    width: 135px;
+    transform: translateX(-15%);
+  }
+}

@@ -394,7 +394,7 @@ h3 {
   color: #394b50;
   font-family: Lato-Bold, Helvetica, Tahoma, sans-serif;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .list-services li p {
   font-size: 13px;
@@ -456,7 +456,7 @@ h3 {
   color: #fff;
 }
 .about-us-section .right-chapter article {
-  width: 70%;
+  width: 80%;
   font-size: 13px;
   font-family: OpenSans-Regular, Helvetica, Tahoma, sans-serif;
   color: #fff;
@@ -587,4 +587,169 @@ h3 {
   background-color: #ffbb42;
   text-transform: uppercase;
   margin-top: 30px;
+  border-radius: 2px;
+}
+
+.how-works {
+  padding: 185px 0 150px;
+}
+.how-works .how-works-subhead {
+  text-align: center;
+}
+.how-works .how-works-subhead p {
+  font-size: 16px;
+  color: #394b50;
+  font-family: OpenSans-Regular, Helvetica, Tahoma, sans-serif;
+}
+.how-works .get-start {
+  display: block;
+  text-align: center;
+  width: 165px;
+  padding: 15px 0;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #ffbb42;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.list-steps {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  max-width: 1110px;
+  margin: 75px auto 90px;
+}
+.list-steps li {
+  position: relative;
+  padding-top: 165px;
+  text-align: center;
+  min-width: 220px;
+  margin: 0 40px;
+}
+.list-steps p {
+  font-size: 13px;
+  font-family: OpenSans-Regular, Helvetica, Tahoma, sans-serif;
+  color: #7b7b7b;
+}
+.list-steps .step-subhead {
+  display: block;
+  font-size: 20px;
+  color: #394b50;
+  font-family: Lato-Bold, Helvetica, Tahoma, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.list-steps .step-one {
+  background: url("../../img/step_one.png") top center no-repeat;
+}
+.list-steps .step-two {
+  background: url("../../img/step_two.png") top center no-repeat;
+}
+.list-steps .step-three {
+  background: url("../../img/step_three.png") top center no-repeat;
+}
+.list-steps .step-four {
+  background: url("../../img/step_four.png") top center no-repeat;
+}
+.list-steps .steps-up-arrow:after {
+  content: " ";
+  background: url("../../img/arrow_up.png") top center no-repeat;
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: 100%;
+  height: 35px;
+  width: 135px;
+  transform: translateX(-15%);
+}
+.list-steps .steps-down-arrow:after {
+  content: " ";
+  background: url("../../img/arrow_down.png") top center no-repeat;
+  display: block;
+  position: absolute;
+  bottom: 60%;
+  left: 100%;
+  height: 35px;
+  width: 135px;
+  transform: translateX(-15%);
+}
+
+.happy-client {
+  background-color: #ffc155;
+  padding: 130px 0 140px;
+}
+.happy-client .client-subhead {
+  text-align: center;
+  color: #fff;
+}
+.happy-client .client-subhead h3 {
+  color: #fff;
+}
+
+.feedback-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 70.5%;
+  margin: 60px auto 0;
+}
+.feedback-list .feedback-list-item {
+  width: 48.5%;
+  border-radius: 2px;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 45px 0 50px 25px;
+  margin-bottom: 20px;
+}
+.feedback-list .feedback-list-item .photo-client {
+  display: block;
+  width: 121px;
+  height: 121px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.feedback-list .feedback-list-item img {
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  height: auto;
+  width: 100%;
+}
+.feedback-list .photo-client-container {
+  float: left;
+  width: 22%;
+  margin-right: 20px;
+}
+.feedback-list .feedback-content {
+  width: 72%;
+  float: left;
+}
+.feedback-list .feedback-content .text-client {
+  color: #7b7b7b;
+  font-family: OpenSans-Regular, Helvetica, Tahoma, sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.feedback-list .feedback-content .name-client {
+  color: #f6772c;
+  font-family: Lato-Regular, Helvetica, Tahoma, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.feedback-list .feedback-content .position-client {
+  color: #99a9ae;
 }
