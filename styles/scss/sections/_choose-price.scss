@@ -1,4 +1,5 @@
 .choose-price {
+  background-color: #e7edf3;
   padding: 125px 0;
   .price-subhead {
     text-align: center;
@@ -22,6 +23,7 @@
   li {
     @include border-radius (3px);
     border: 1px solid #ccd5df;
+    background-color: $white;
     width: 33.3%;
     padding: 50px 0;
     transition: 0.5s;

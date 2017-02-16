@@ -1,0 +1,31 @@
+footer {
+  border-top: 1px solid #e3e7ec;
+  max-width: 1170px;
+  margin: 0 auto;
+  .footer-nav {
+    li {
+      a {
+        font-family: $latoRegular;
+        font-size: $small;
+        text-transform: uppercase;
+        color: $headerGrey;
+        display: inline-block;
+        padding: 10px;
+        @include transition (0.3s);
+        &:hover {
+          @include border-radius (2px);
+          background-color: #ffbb42;
+          color: $white;
+        }
+      }
+    }
+  }
+  .footer-nav {
+    padding-top: 5px;
+    float: right;
+    .list-nav {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
