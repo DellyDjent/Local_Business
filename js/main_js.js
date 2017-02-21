@@ -1,32 +1,11 @@
-$( document ).ready(function() {
-    $('.item-masonry').hover(
-        function(){
-            $(this).find(".cover-item-gallery").fadeIn();
-        },
-        function(){
-            $(this).find(".cover-item-gallery").fadeOut();
-        }
-    );
+var flag = true;
 
-    var sizer = '.sizer4';
+$('.btn-toggle').on('click', function (e) {
+   if (flag) {
+        flag = false;
 
-    var container = $('#gallery');
-
-    container.imagesLoaded(function(){
-        container.masonry({
-            itemSelector: '.item-masonry',
-            columnWidth: sizer,
-            percentPosition: true,
+        $('.main-header .main-nav').slideToggle(function(){
+            flag = true;
         });
-    });
-
-    $('.btn-sub, .email-field').on('click', function (){
-
-        var itemAnimated = $('.email-field')
-
-        itemAnimated.addClass('animated zoomOutUp');
-        itemAnimated.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            itemAnimated.removeClass('animated zoomOutUp');
-        });
-    });
+   }
 });

@@ -1,7 +1,5 @@
 footer {
-  border-top: 1px solid #e3e7ec;
-  max-width: 1170px;
-  margin: 0 auto;
+  overflow: hidden;
   .footer-nav {
     li {
       a {
@@ -21,11 +19,73 @@ footer {
     }
   }
   .footer-nav {
-    padding-top: 5px;
+    width: 100%;
+    border-top: 1px solid #e3e7ec;
+    padding-top: 60px;
     float: right;
+    margin-bottom: 20px;
     .list-nav {
-      display: flex;
-      flex-direction: row;
+      @include display-flex (flex);
+      @include flex-direction (row);
+      @include flex-wrap (wrap);
+      @include justify-content (center);
+    }
+  }
+  .number-phone {
+    display: block;
+    clear: both;
+    background: url("../../img/bg_phone_footer.png") 0 70% no-repeat;
+    width: 185px;
+    max-width: 380px;
+    margin: 0 auto 20px;
+    padding-left: 25px;
+    color: #394b50;
+    font-family: $latoRegular;
+    font-size: 23px;
+    line-height: 24px;
+  }
+  .list-social-icon {
+    @include display-flex (flex);
+    @include flex-direction (row);
+    @include flex-wrap (wrap);
+    @include justify-content (center);
+    padding-bottom: 60px;
+    li {
+      margin: 0 5px;
+      .twitter-icon {
+        display: block;
+        padding: 9px;
+        background: url("../../img/twitter_icon.png") no-repeat;
+      }
+      .facebook-icon {
+        display: block;
+        padding: 9px;
+        background: url("../../img/facebook_icon.png") no-repeat;
+      }
+      .google-icon {
+        display: block;
+        padding: 9px;
+        background: url("../../img/google_icon.png") no-repeat;
+      }
+      .in-icon {
+        display: block;
+        padding: 9px;
+        background: url("../../img/in_icon.png") no-repeat;
+      }
+    }
+  }
+  .copyright {
+    background-color: #709dca;
+    @include display-flex (flex);
+    @include flex-direction (row);
+    @include flex-wrap (wrap);
+    @include justify-content (center);
+    font-family: $fontSans;
+    font-size: $small;
+    color: $white;
+    .left-item-copyright,
+    .right-item-copyright{
+      margin: 0 2px;
     }
   }
 }

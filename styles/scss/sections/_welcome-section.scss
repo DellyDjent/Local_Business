@@ -1,4 +1,4 @@
-.container {
+.wrapper {
   max-width: 1700px;
   margin: 0 auto;
   .welcome {
@@ -13,6 +13,11 @@
   .main-header {
     padding: 20px 100px;
   }
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .main-header {
@@ -38,6 +43,20 @@
       display: flex;
       flex-direction: row;
     }
+  }
+}
+
+.btn-toggle {
+  display: none;
+  float: right;
+  width: 40px;
+  height: 30px;
+  .btn-toggle-item {
+    height: 5px;
+    display: block;
+    @include border-radius (2px);
+    background-color: #ffbb42;
+    width: 100%;
   }
 }
 
