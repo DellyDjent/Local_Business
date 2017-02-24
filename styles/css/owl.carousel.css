@@ -218,12 +218,3 @@
   position: relative;
   z-index: 1;
 }
-
-@media (min-width: 1200px) and (max-width:1500px) {
-  .owl-carousel .owl-item img {
-    display: block;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-}

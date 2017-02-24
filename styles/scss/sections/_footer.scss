@@ -1,4 +1,4 @@
-footer {
+.main-footer {
   overflow: hidden;
   .footer-nav {
     li {
@@ -31,11 +31,11 @@ footer {
       @include justify-content (center);
     }
   }
-  .number-phone {
+  .number-phone-footer {
     display: block;
     clear: both;
     background: url("../../img/bg_phone_footer.png") 0 70% no-repeat;
-    width: 185px;
+    width: 250px;
     max-width: 380px;
     margin: 0 auto 20px;
     padding-left: 25px;
@@ -52,6 +52,9 @@ footer {
     padding-bottom: 60px;
     li {
       margin: 0 5px;
+      a {
+        text-indent: -9999px;
+      }
       .twitter-icon {
         display: block;
         padding: 9px;

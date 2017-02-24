@@ -24,11 +24,6 @@
     overflow: hidden;
     padding: 45px 0 50px 25px;
     margin-bottom: 20px;
-    .photo-client {
-      display: block;
-      @include  border-radius (50%);
-      overflow: hidden;
-    }
     img {
       @include transform (scale(1.1));
       height: auto;
@@ -36,6 +31,9 @@
     }
   }
   .photo-client-container {
+    display: block;
+    @include  border-radius (50%);
+    overflow: hidden;
     float: left;
     width: 22%;
     margin-right: 20px;

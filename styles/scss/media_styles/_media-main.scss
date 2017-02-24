@@ -15,15 +15,8 @@
   .welcome .main-form-subhead {
     margin-bottom: 80px;
   }
-  .top-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-  }
   .top-form input,
   .top-form .btn-request {
-    display: block;
     margin: 20px 5px 0;
   }
   .list-services {
@@ -106,16 +99,12 @@
     font-size: 32px;
   }
   .top-form {
-    @include display-flex;
-    @include flex-direction (column);
-    @include align-items (center);
     width: 90%;
     margin: 0 auto;
   }
   .top-form input,
   .top-form .btn-request {
     width: 50%;
-    display: block;
     margin: 20px 5px 0;
   }
   .list-services {
@@ -230,16 +219,12 @@
     font-size: 32px;
   }
   .top-form {
-    @include display-flex;
-    @include flex-direction (column);
-    @include align-items (center);
     width: 90%;
     margin: 0 auto;
   }
   .top-form input,
   .top-form .btn-request {
     width: 70%;
-    display: block;
     margin: 20px 5px 0;
   }
   .main-slider .owl-carousel .owl-item img {
@@ -353,7 +338,7 @@
     clear: both;
   }
   .news-letter {
-    padding: 100px 0 55px;
+    padding: 100px 0 0;
   }
   .bottom-form {
     @include display-flex;
@@ -369,8 +354,12 @@
   }
   .map-address {
     background-size: cover;
+    min-height: 440px;
   }
-  footer .copyright {
+  .logo-footer {
+    margin-top: 20px;
+  }
+  .main-footer .copyright {
     @include flex-direction (column);
     text-align: center;
   }

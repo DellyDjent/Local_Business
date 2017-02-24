@@ -14,11 +14,11 @@
 	<div class="wrapper">
 		<div class="welcome">
 			<header class="main-header">
-				<h1>
-					<a class="logo" href="#">
+				<a class="logo" href="#">
+					<h1>
 						<img src="img/logo.png" alt="logo" width="50" height="48">
-					</a>
-				</h1>
+					</h1>
+				</a>
 				<span class="btn-toggle">
 					<span class="btn-toggle-item"></span>
 					<span class="btn-toggle-item"></span>
@@ -55,14 +55,14 @@
 					<h2>Boost up your Local business</h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
 				</header>
-				<fieldset>
-					<form class="top-form" action="">
-						<input class="field-name" type="text" name="name" placeholder="Full Name">
-						<input class="field-email" type="text" name="email" placeholder="Email Address">
-						<input class="field-phone" type="text" name="phone" placeholder="Phone Number">
-						<button class="btn-request">Request a quote</button>
-					</form>
-				</fieldset>
+				<form class="top-form" action="" method="post" id="mainForm">
+					<fieldset>
+						<input class="field-name" type="text" name="name" placeholder="Full Name" id="nameField">
+						<input class="field-email" type="email" name="email" placeholder="Email Address" id="emailField">
+						<input class="field-phone" type="text" name="phone" placeholder="Phone Number" id="phoneField">
+						<button class="btn-request" type="submit">Request a quote</button>
+					</fieldset>
+				</form>
 			</section>
 			<div class="main-slider">
 				<ul class="owl-carousel owl-theme">
@@ -136,24 +136,26 @@
 				</li>
 			</ul>
 		</section>
-		<div class="about-us-section">
+		<section class="about-us-section">
 			<div class="left-chapter">
 				<img src="img/about_us_img.png" alt="">
 			</div>
 			<div class="right-chapter">
-				<h2>ABout us</h2>
-				<article>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				<article>
+					<h2>ABout us</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
 					when an unknown printer took a galley of type and scrambled it to make a type
 					specimen book. It has survived not only five centuries, but also the leap into
 					electronic typesetting, remaining essentially unchanged. It was popularised in
 					the ore recently with desktop publishing software like Aldus PageMaker including
 					versions of Lorem Ipsum
+					</p>
 				</article>
-				<button class="btn-read-more">read more</button>
+				<button class="btn-read-more" type="button">read more</button>
 			</div>
-		</div>
-		<div class="choose-price">
+		</section>
+		<section class="choose-price">
 			<header class="price-subhead">
 				<h3>Choos your price</h3>
 				<p>
@@ -172,7 +174,7 @@
 							<p>1 account</p>
 							<p>8 hours support</p>
 							<p>custom cloud services</p>
-							<button class="btn-get-started">get started</button>
+							<button class="btn-get-started" type="button">get started</button>
 						</div>
 					</div>
 				</li>
@@ -187,7 +189,7 @@
 							<p>2 account</p>
 							<p>100 mb storage</p>
 							<p>custom cloud services</p>
-							<button class="btn-get-started">get started</button>
+							<button class="btn-get-started" type="button">get started</button>
 						</div>
 					</div>
 				</li>
@@ -202,13 +204,13 @@
 							<p>8 account</p>
 							<p>24 hours support</p>
 							<p>custom cloud services</p>
-							<button class="btn-get-started">get started</button>
+							<button class="btn-get-started" type="button">get started</button>
 						</div>
 					</div>
 				</li>
 			</ul>
-		</div>
-		<div class="how-works">
+		</section>
+		<section class="how-works">
 			<header class="how-works-subhead">
 				<h3>How it works</h3>
 				<p>
@@ -246,8 +248,8 @@
 				</li>
 			</ul>
 			<a class="get-start" href="#">get start now</a>
-		</div>
-		<div class="happy-client">
+		</section>
+		<section class="happy-client">
 			<header class="client-subhead">
 				<h3>Happy Clients</h3>
 				<p>
@@ -256,10 +258,10 @@
 			</header>
 			<ul class="feedback-list">
 				<li class="feedback-list-item">
-					<div class="photo-client-container">
-						<span class="photo-client">
+					<div class="photo-client-container photo-client">
+						<!--<span class="photo-client">-->
 							<img src="img/photo_client_one.jpg" alt="photo">
-						</span>
+						<!--</span>-->
 					</div>
 					<div class="feedback-content">
 						<div class="text-client">
@@ -328,7 +330,7 @@
 					</div>
 				</li>
 			</ul>
-		</div>
+		</section>
 		<div class="news-letter">
 			<header class="news-subhead">
 				<h3>Newsletter</h3>
@@ -336,24 +338,24 @@
 					Lorem Ipsum is simply dummy Business industry
 				</p>
 			</header>
-			<fieldset>
-				<form class="bottom-form" action="">
+			<form class="bottom-form" action="">
+				<fieldset>
 					<input class="bottom-field-name" type="text" name="name" placeholder="Full Name">
 					<input class="bottom-field-email" type="text" name="email" placeholder="Email Address">
-					<button class="bottom-btn-request">subscribe now</button>
-				</form>
-			</fieldset>
+					<button class="bottom-btn-request" type="submit">subscribe now</button>
+				</fieldset>
+			</form>
 			<div class="map-address">
-				<div class="address">
+				<address class="address">
 					<span class="subhead-contact">address</span>
-					<p>Business street
+						<p>Business street</p>
 						<p>Second north section</p>
 						<p>Bavani nagar. 88769</p>
-						<p>Call : +987-9976-999</p>
+						<a class="number-phone" href="tel:">Call : +987-9976-999</a>
 						<p>
 							<a class="email" href="mailto:businessface.com">info@businessface.com</a>
 						</p>
-				</div>
+				</address>
 				<div class="logo-footer">
 					<a class="logo" href="#">
 						<img src="img/logo.png" alt="logo" width="50" height="48">
@@ -361,7 +363,7 @@
 				</div>
 			</div>
 		</div>
-		<footer>
+		<footer class="main-footer">
 			<div class="container">
 				<nav class="footer-nav">
 					<ul class="list-nav">
@@ -388,21 +390,19 @@
 						</li>
 					</ul>
 				</nav>
-				<span class="number-phone">
-					 +987 9976 999
-				</span>
+				<a class="number-phone-footer" href="tel:">Call : +987-9976-999</a>
 				<ul class="list-social-icon">
 					<li>
-						<a class="twitter-icon" href="#"></a>
+						<a class="twitter-icon" href="#">twitter</a>
 					</li>
 					<li>
-						<a class="facebook-icon" href="#"></a>
+						<a class="facebook-icon" href="#">facebook</a>
 					</li>
 					<li>
-						<a class="google-icon" href="#"></a>
+						<a class="google-icon" href="#">google+</a>
 					</li>
 					<li>
-						<a class="in-icon" href="#"></a>
+						<a class="in-icon" href="#">in</a>
 					</li>
 				</ul>
 			</div>
@@ -413,8 +413,9 @@
 		</footer>
 	</div>
 	<script src="js/jquery-2.2.4.min.js"></script>
-	<script src="js/main_js.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/java-script-slider.js"></script>
+	<script src="js/main_js.js"></script>
 </body>
 </html>

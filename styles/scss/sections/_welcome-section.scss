@@ -25,10 +25,8 @@
   background-color: $white;
   padding: 20px 265px;
   overflow: hidden;
-  h1 {
-    float: left;
-  }
   .logo{
+    float: left;
     display: block;
     img {
       display: block;
@@ -131,6 +129,13 @@
     border: none;
     padding-left: 40px;
     margin: 0 5px;
+    &.error {
+      @include border-radius (2px);
+      border: 1px solid #ff1548;
+    }
+  }
+  fieldset {
+    position: relative;
   }
   .field-name {
     background: url("../../img/bg_field_name.png") #fff 15px center no-repeat;
@@ -154,6 +159,28 @@
       color: $white;
     }
   }
+}
+
+label.error {
+  color: #ff1548;
+}
+
+label#nameField-error {
+  position: absolute;
+  left: 9%;
+  bottom: -50%;
+}
+
+label#emailField-error {
+  position: absolute;
+  left: 33%;
+  bottom: -50%;
+}
+
+label#phoneField-error {
+  position: absolute;
+  left: 60%;
+  bottom: -50%;
 }
 
 ::-webkit-input-placeholder {color:$fieldsGrey;}
