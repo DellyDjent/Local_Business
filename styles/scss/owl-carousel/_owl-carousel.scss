@@ -1,0 +1,49 @@
+.main-slider .owl-theme .owl-dots {
+  margin-top: 75px;
+}
+
+.main-slider .owl-carousel .owl-item img {
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-left: 3px;
+}
+
+.main-slider .owl-theme .owl-dots .owl-dot span {
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid #dedfe0;
+  width: 15px;
+  height: 15px;
+  @include border-radius (111px);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.main-slider .owl-theme .owl-dots .owl-dot.active span {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #1ca8dd;
+  width: 15px;
+  height: 15px;
+  @include border-radius (111px);
+}
+
+@media (max-width: 767px) {
+  .main-slider .owl-carousel {
+    background: none;
+  }
+  .owl-theme .owl-nav {
+    margin-top: 20px;
+  }
+  .owl-theme .owl-dots {
+    padding-bottom: 20px;
+  }
+  .main-slider .owl-theme .owl-dots .owl-dot.active span {
+    border: 2px solid #ffbb42;
+  }
+  .main-slider .owl-theme .owl-dots {
+    margin-top: 30px;
+  }
+}

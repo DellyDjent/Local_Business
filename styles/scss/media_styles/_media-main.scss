@@ -15,9 +15,25 @@
   .welcome .main-form-subhead {
     margin-bottom: 80px;
   }
-  .top-form input,
-  .top-form .btn-request {
-    margin: 20px 5px 0;
+  .top-form {
+    fieldset {
+      text-align: center;
+      width: 25%;
+      display: table;
+      margin: 0 auto;
+      .container-input {
+        width: 100%;
+        margin: 0 auto 10px;
+        display: table-cell;
+      }
+      .btn-request {
+        display: block;
+        clear: both;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+      }
+    }
   }
   .list-services {
     @include display-flex;
@@ -102,10 +118,34 @@
     width: 90%;
     margin: 0 auto;
   }
-  .top-form input,
-  .top-form .btn-request {
-    width: 50%;
-    margin: 20px 5px 0;
+  .top-form {
+    fieldset {
+      text-align: center;
+      width: 25%;
+      display: table;
+      margin: 0 auto;
+      .container-input {
+        width: 100%;
+        margin: 0 auto 20px;
+        display: table-cell;
+      }
+      .btn-request {
+        display: block;
+        clear: both;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+      }
+      label,
+      label#phoneField-error {
+        position: absolute;
+        left: 15%;
+        bottom: -35%;
+      }
+      label#phoneField-error {
+        left: 30%;
+      }
+    }
   }
   .list-services {
     @include display-flex;
@@ -191,6 +231,7 @@
     padding: 0 15px;
   }
   .main-header {
+    margin-bottom: 60px;
     padding: 20px 20px;
   }
   .btn-toggle {
@@ -219,13 +260,38 @@
     font-size: 32px;
   }
   .top-form {
-    width: 90%;
+    width: 290px;
     margin: 0 auto;
-  }
-  .top-form input,
-  .top-form .btn-request {
-    width: 70%;
-    margin: 20px 5px 0;
+    fieldset {
+      text-align: center;
+      width: 100%;
+      display: table;
+      margin: 0 auto;
+      .container-input {
+        width: inherit;
+        margin: 0 auto 20px;
+        display: table-cell;
+      }
+      input {
+        width: inherit;
+      }
+      .btn-request {
+        display: block;
+        clear: both;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+      }
+      label,
+      label#phoneField-error {
+        position: absolute;
+        left: 15%;
+        bottom: -35%;
+      }
+      label#phoneField-error {
+        left: 30%;
+      }
+    }
   }
   .main-slider .owl-carousel .owl-item img {
     display: block;
